@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(250, 250, 250);
+}
+.layui-container{
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+}
+header{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 50px;
+    font-family: 新宋体;
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card span{
+    position:absolute;
+    top: 50%;
+    width: 550px;
+    height: 550px;
+    display: block;
+    background: #000;
+    border-radius: 50%;
+    transform-origin: 275px -50px;
+    transform: rotate(calc(45deg * var(--i)));
+    filter: blur(100px);
+    opacity: 0.65;
+}
+.card span:nth-child(1){
+    background: #01b2fe;
+}
+.card span:nth-child(2){
+    background: #ff008c;
+}
+
+.card span:nth-child(3){
+    background: #4A8884;
+}
+.card span:nth-child(4){
+    background: #00c456;
+}
+.card span:nth-child(5){
+    background: #FED6D6;
+}
+.card span:nth-child(6){
+    background: #ffcd00;
+}
+.card span:nth-child(7){
+    background: rgba(230, 248, 93);
+}
+.card span:nth-child(8){
+    background: #9fd9ef;
+}
+.card .glass{
+    /*position: absolute;*/
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+.card .glass::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    pointer-events: none;
+    transform: skewX(345deg);
+
+}
+/*#image {*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    border: black solid 1px;*/
+/*    display: table-cell;*/
+/*    vertical-align: middle;*/
+/*    text-align: center;*/
+/*}*/
+/*#imageOnHat{*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    border: black solid 1px;*/
+/*    display: table-cell;*/
+/*    vertical-align: middle;*/
+/*    text-align: center;*/
+/*}*/
