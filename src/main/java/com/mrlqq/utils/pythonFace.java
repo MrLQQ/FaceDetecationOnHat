@@ -13,13 +13,14 @@ public class pythonFace {
         Process proc;
         try {
             String pythonFile = "src/main/java/com/mrlqq/Python/face.py";
-            String[] command = new String[]{"python3", pythonFile, imgName};
+            String[] command = new String[]{"python", pythonFile, imgName};
             proc = Runtime.getRuntime().exec(command);
             BufferedReader in = new BufferedReader(new InputStreamReader(proc.getInputStream()));
             String line = null;
             List outLine = new ArrayList();
             while ((line = in.readLine()) != null) {
                 outLine.add(line);
+                System.out.println(line);
             }
             imgInHatName = (String) outLine.get(outLine.size() - 1);
             in.close();

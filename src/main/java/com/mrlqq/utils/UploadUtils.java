@@ -16,12 +16,12 @@ import java.util.UUID;
  */
 public class UploadUtils {
     //定义一个上传文件的路径
-//    private static final String BASE_PATH = "E:/imageUpload/";
-    private static final String BASE_PATH = "/home/FaceDetectionOnHat/imageUpload/";
+    private static final String BASE_PATH = "E:/imageUpload/";
+//    private static final String BASE_PATH = "/home/FaceDetectionOnHat/imageUpload/";
 //    private static final String BASE_PATH = "src/main/resources/static/image/";
 //    private static final String  BASE_PATH = "src/main/resources/static/";
     //定义文件服务器的访问地址
-    private static  final String SERVER_PATH="http://8.136.9.12:9999/";
+    private static  final String SERVER_PATH="http://localhost:9999/";
     public static String upload(MultipartFile file){
         //获得上传文件的名称
         String filename = file.getOriginalFilename();

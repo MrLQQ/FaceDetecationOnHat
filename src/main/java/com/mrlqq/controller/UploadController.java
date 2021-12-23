@@ -22,7 +22,7 @@ import java.util.HashMap;
 @RequestMapping("upload")
 public class UploadController {
 
-    private static  final String SERVER_PATH="http://192.168.171.92:9999/";
+    private static  final String SERVER_PATH="http://localhost:9999/";
 
     @RequestMapping("image")
     @ResponseBody

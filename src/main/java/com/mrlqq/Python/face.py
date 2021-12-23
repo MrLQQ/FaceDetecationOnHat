@@ -5,9 +5,10 @@ import sys
 strs = sys.argv[1:]
 print(strs)
 
+#定义一个上传文件的路径
 basePaht = "E:/imageUpload/"
-basePaht = "/home/FaceDetectionOnHat/imageUpload/"
-print(basePaht)
+# basePaht = "/home/FaceDetectionOnHat/imageUpload/"
+
 img_path = basePaht+strs[0]
 print(img_path)
 
@@ -76,11 +77,10 @@ inHat(faces_people)
 #inHat(faces_anime)
 
 # 显示最终结果
-path = "/home/FaceDetectionOnHat/imageUpload/"
 nameSplit = strs[0].split(".")
 newImgName = nameSplit[0]+"_hat."+nameSplit[1]
 print(newImgName)
-cv2.imwrite(path+newImgName,sample_image)
+cv2.imwrite(basePaht+newImgName,sample_image)
 
 print(newImgName)
 
